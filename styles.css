@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cormorant Infant", serif;
+  font-style: normal;
+}
+
+/*
+font-family: 'Montserrat', sans-serif;
+ */
+body {
+  background-image: url("./images/ahh_greet.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100dvh;
+  overflow: hidden;
+  z-index: -10;
+  position: relative;
+}
+
+div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+}
+
+.text {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #f5f5f5;
+  text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191, 1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191, 1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4);
+}
+@media screen and (min-width: 375px) {
+  .text {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .text {
+    font-size: 10rem;
+  }
+}
+
+/* POP-UP */
+.pop_up_sec {
+  position: fixed;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  top: 15%;
+  left: 35%;
+  z-index: 1000;
+}
+@media (min-width: 992px) {
+  .pop_up_sec {
+    top: 20%;
+    left: 10%;
+  }
+}
+.pop_up_sec.show_pop {
+  width: 100%;
+}
+.pop_up_sec_inner {
+  position: relative;
+  display: grid;
+  gap: 0.5rem;
+}
+.pop_up_box1, .pop_up_box2, .pop_up_box3, .pop_up_box4, .pop_up_box5 {
+  padding: 0.5rem 1rem;
+  background: #fff;
+  color: #17214d;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  font-weight: 700;
+  width: 11rem;
+  border-radius: 3px;
+  display: none;
+}
+
+/* FADE ANIMATION */
+.fade {
+  display: block;
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.made_by {
+  background: #fff;
+  color: #000;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.made_by img {
+  width: 2rem;
+  aspect-ratio: 1/1;
+}/*# sourceMappingURL=styles.css.map */
